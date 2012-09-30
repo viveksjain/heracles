@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E24F640C160A087500EA16CF /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = E2FDF837160A04F600744952 /* Growl Registration Ticket.growlRegDict */; };
+		E24F640D160A089900EA16CF /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2FDF835160A029000744952 /* Growl.framework */; };
+		E266C21D15C553FD00A3F4A1 /* Kerberos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E266C21C15C553FD00A3F4A1 /* Kerberos.framework */; };
+		E266C22015C5540200A3F4A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E266C21F15C5540200A3F4A1 /* Security.framework */; };
+		E267DF2E160D80F4006453F7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E267DF2D160D80F4006453F7 /* Reachability.m */; };
+		E295A752160D54750073887F /* NSString+SymlinksAndAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = E295A74F160D54750073887F /* NSString+SymlinksAndAliases.m */; };
+		E295A753160D54750073887F /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E295A751160D54750073887F /* PFMoveApplication.m */; };
+		E29DAEED160AC273006E7C1D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29DAEEC160AC273006E7C1D /* Sparkle.framework */; };
+		E29DAEEF160AC290006E7C1D /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E29DAEEC160AC273006E7C1D /* Sparkle.framework */; };
+		E29DAEFD160B01E0006E7C1D /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E29DAEFC160B01E0006E7C1D /* dsa_pub.pem */; };
+		E2A01A6C15B539F300911B7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A01A6B15B539F300911B7D /* Cocoa.framework */; };
+		E2B3916916038D67005A47BF /* HeraclesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3916316038D67005A47BF /* HeraclesAppDelegate.m */; };
+		E2B3916A16038D67005A47BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B3916416038D67005A47BF /* MainMenu.xib */; };
+		E2B3916C16038D67005A47BF /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3916816038D67005A47BF /* Timer.m */; };
+		E2B3917716038D9F005A47BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3917616038D9F005A47BF /* main.m */; };
+		E2B4ECE315FC9EE7001791AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B4ECE215FC9EE7001791AA /* QuartzCore.framework */; };
+		E2B5CB141612B703007B69DD /* drawer-unlocked.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2B5CB131612B703007B69DD /* drawer-unlocked.icns */; };
+		E2EF1941160870270056D6E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EF1940160870270056D6E5 /* SystemConfiguration.framework */; };
+		E2FDF836160A029000744952 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FDF835160A029000744952 /* Growl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E266C22B15C569E600A3F4A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E24F640D160A089900EA16CF /* Growl.framework in CopyFiles */,
+				E29DAEEF160AC290006E7C1D /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E216D80E1603098100715474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E216D80F1603098100715474 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E216D8101603098100715474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2537853160440E100100E4A /* Heracles-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Heracles-Prefix.pch"; path = "Heracles/Heracles-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E266C21C15C553FD00A3F4A1 /* Kerberos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kerberos.framework; path = System/Library/Frameworks/Kerberos.framework; sourceTree = SDKROOT; };
+		E266C21F15C5540200A3F4A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E267DF2C160D80F4006453F7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Heracles/Reachability/Reachability.h; sourceTree = SOURCE_ROOT; };
+		E267DF2D160D80F4006453F7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Heracles/Reachability/Reachability.m; sourceTree = SOURCE_ROOT; };
+		E295A74E160D54750073887F /* NSString+SymlinksAndAliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SymlinksAndAliases.h"; path = "Heracles/LetsMove/NSString+SymlinksAndAliases.h"; sourceTree = SOURCE_ROOT; };
+		E295A74F160D54750073887F /* NSString+SymlinksAndAliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SymlinksAndAliases.m"; path = "Heracles/LetsMove/NSString+SymlinksAndAliases.m"; sourceTree = SOURCE_ROOT; };
+		E295A751160D54750073887F /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFMoveApplication.m; path = Heracles/LetsMove/PFMoveApplication.m; sourceTree = SOURCE_ROOT; };
+		E295A754160D55EA0073887F /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFMoveApplication.h; path = Heracles/LetsMove/PFMoveApplication.h; sourceTree = SOURCE_ROOT; };
+		E29DAEEC160AC273006E7C1D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Heracles/Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		E29DAEFC160B01E0006E7C1D /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Heracles/Resources/dsa_pub.pem; sourceTree = SOURCE_ROOT; };
+		E2A01A6715B539F300911B7D /* Heracles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heracles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A01A6B15B539F300911B7D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E2B3916316038D67005A47BF /* HeraclesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeraclesAppDelegate.m; path = Heracles/HeraclesAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		E2B3916416038D67005A47BF /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Heracles/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		E2B3916716038D67005A47BF /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = Heracles/Timer.h; sourceTree = SOURCE_ROOT; };
+		E2B3916816038D67005A47BF /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = Heracles/Timer.m; sourceTree = SOURCE_ROOT; };
+		E2B3916E16038D75005A47BF /* HeraclesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeraclesAppDelegate.h; path = Heracles/HeraclesAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		E2B3917316038D99005A47BF /* Heracles-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Heracles-Info.plist"; path = "Heracles/Heracles-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E2B3917616038D9F005A47BF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Heracles/main.m; sourceTree = SOURCE_ROOT; };
+		E2B4ECE215FC9EE7001791AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2B5CB131612B703007B69DD /* drawer-unlocked.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "drawer-unlocked.icns"; path = "Heracles/Resources/DefaultIcon/drawer-unlocked.icns"; sourceTree = SOURCE_ROOT; };
+		E2EF1940160870270056D6E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E2FDF7E91609B80C00744952 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2FDF835160A029000744952 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Heracles/Frameworks/Growl.framework; sourceTree = "<group>"; };
+		E2FDF837160A04F600744952 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Growl Registration Ticket.growlRegDict"; path = "Heracles/Resources/Growl Registration Ticket.growlRegDict"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2A01A6415B539F300911B7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B4ECE315FC9EE7001791AA /* QuartzCore.framework in Frameworks */,
+				E2EF1941160870270056D6E5 /* SystemConfiguration.framework in Frameworks */,
+				E266C22015C5540200A3F4A1 /* Security.framework in Frameworks */,
+				E266C21D15C553FD00A3F4A1 /* Kerberos.framework in Frameworks */,
+				E2A01A6C15B539F300911B7D /* Cocoa.framework in Frameworks */,
+				E2FDF836160A029000744952 /* Growl.framework in Frameworks */,
+				E29DAEED160AC273006E7C1D /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E216D80D1603098100715474 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E216D80E1603098100715474 /* AppKit.framework */,
+				E216D80F1603098100715474 /* CoreData.framework */,
+				E216D8101603098100715474 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E266C22915C5699800A3F4A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E29DAEEC160AC273006E7C1D /* Sparkle.framework */,
+				E2FDF835160A029000744952 /* Growl.framework */,
+				E2EF1940160870270056D6E5 /* SystemConfiguration.framework */,
+				E2A01A6B15B539F300911B7D /* Cocoa.framework */,
+				E2B4ECE215FC9EE7001791AA /* QuartzCore.framework */,
+				E266C21F15C5540200A3F4A1 /* Security.framework */,
+				E266C21C15C553FD00A3F4A1 /* Kerberos.framework */,
+				E2FDF7E91609B80C00744952 /* Foundation.framework */,
+				E216D80D1603098100715474 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A01A5C15B539F300911B7D = {
+			isa = PBXGroup;
+			children = (
+				E266C22915C5699800A3F4A1 /* Frameworks */,
+				E2A01A7115B539F300911B7D /* Heracles */,
+				E2A01A6815B539F300911B7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2A01A6815B539F300911B7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2A01A6715B539F300911B7D /* Heracles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2A01A7115B539F300911B7D /* Heracles */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3916E16038D75005A47BF /* HeraclesAppDelegate.h */,
+				E2B3916316038D67005A47BF /* HeraclesAppDelegate.m */,
+				E295A74E160D54750073887F /* NSString+SymlinksAndAliases.h */,
+				E295A74F160D54750073887F /* NSString+SymlinksAndAliases.m */,
+				E295A754160D55EA0073887F /* PFMoveApplication.h */,
+				E295A751160D54750073887F /* PFMoveApplication.m */,
+				E267DF2C160D80F4006453F7 /* Reachability.h */,
+				E267DF2D160D80F4006453F7 /* Reachability.m */,
+				E2B3916716038D67005A47BF /* Timer.h */,
+				E2B3916816038D67005A47BF /* Timer.m */,
+				E2B3916416038D67005A47BF /* MainMenu.xib */,
+				E2A01A7215B539F300911B7D /* Supporting Files */,
+			);
+			name = Heracles;
+			path = KerberosAuth;
+			sourceTree = "<group>";
+		};
+		E2A01A7215B539F300911B7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2FDF837160A04F600744952 /* Growl Registration Ticket.growlRegDict */,
+				E2537853160440E100100E4A /* Heracles-Prefix.pch */,
+				E2B5CB131612B703007B69DD /* drawer-unlocked.icns */,
+				E2B3917316038D99005A47BF /* Heracles-Info.plist */,
+				E2B3917616038D9F005A47BF /* main.m */,
+				E29DAEFC160B01E0006E7C1D /* dsa_pub.pem */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2A01A6615B539F300911B7D /* Heracles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A01A8515B539F400911B7D /* Build configuration list for PBXNativeTarget "Heracles" */;
+			buildPhases = (
+				E2A01A6315B539F300911B7D /* Sources */,
+				E2A01A6415B539F300911B7D /* Frameworks */,
+				E2A01A6515B539F300911B7D /* Resources */,
+				E266C22B15C569E600A3F4A1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Heracles;
+			productName = KerberosAuth;
+			productReference = E2A01A6715B539F300911B7D /* Heracles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2A01A5E15B539F300911B7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KerberosAuth;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = E2A01A6115B539F300911B7D /* Build configuration list for PBXProject "Heracles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E2A01A5C15B539F300911B7D;
+			productRefGroup = E2A01A6815B539F300911B7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2A01A6615B539F300911B7D /* Heracles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2A01A6515B539F300911B7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B3916A16038D67005A47BF /* MainMenu.xib in Resources */,
+				E24F640C160A087500EA16CF /* Growl Registration Ticket.growlRegDict in Resources */,
+				E29DAEFD160B01E0006E7C1D /* dsa_pub.pem in Resources */,
+				E2B5CB141612B703007B69DD /* drawer-unlocked.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2A01A6315B539F300911B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B3916916038D67005A47BF /* HeraclesAppDelegate.m in Sources */,
+				E2B3916C16038D67005A47BF /* Timer.m in Sources */,
+				E2B3917716038D9F005A47BF /* main.m in Sources */,
+				E295A752160D54750073887F /* NSString+SymlinksAndAliases.m in Sources */,
+				E295A753160D54750073887F /* PFMoveApplication.m in Sources */,
+				E267DF2E160D80F4006453F7 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E2A01A8315B539F400911B7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E2A01A8415B539F400911B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E2A01A8615B539F400911B7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Heracles/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heracles/Heracles-Prefix.pch";
+				INFOPLIST_FILE = "Heracles/Heracles-Info.plist";
+				PRODUCT_NAME = Heracles;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E2A01A8715B539F400911B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Heracles/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heracles/Heracles-Prefix.pch";
+				INFOPLIST_FILE = "Heracles/Heracles-Info.plist";
+				PRODUCT_NAME = Heracles;
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2A01A6115B539F300911B7D /* Build configuration list for PBXProject "Heracles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A01A8315B539F400911B7D /* Debug */,
+				E2A01A8415B539F400911B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A01A8515B539F400911B7D /* Build configuration list for PBXNativeTarget "Heracles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A01A8615B539F400911B7D /* Debug */,
+				E2A01A8715B539F400911B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2A01A5E15B539F300911B7D /* Project object */;
+}

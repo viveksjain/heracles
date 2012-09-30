@@ -1,0 +1,3 @@
+[submodule "Heracles/Reachability"]
+	path = Heracles/Reachability
+	url = https://github.com/tonymillion/Reachability.git

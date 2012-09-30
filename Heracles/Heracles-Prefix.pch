@@ -1,0 +1,9 @@
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+
+    #ifdef DEBUG
+        #define DLOG(fmt, ...) NSLog(@"%s " fmt, __PRETTY_FUNCTION__, ##__VA_ARGS__)
+    #else
+        #define DLOG(...)
+    #endif
+#endif
