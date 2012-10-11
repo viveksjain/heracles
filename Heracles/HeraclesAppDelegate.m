@@ -43,13 +43,22 @@
                                              selector:@selector(authenticateInBackgroundWithNotification:)
                                                  name:kReachabilityChangedNotification 
                                                object:nil];
+    
     /*
-     * Since LSUIElement is set to true, it seems that the Heracles will not be
-     * the topmost app when launched, so activate it manually (but only if
+     * Since `LSUIElement` is set to true, it seems that the Heracles will not
+     * be the topmost app when launched, so activate it manually (but only if
      * the window is visible, i.e. it is not being run as a hidden login
      * item).
      */
-    if ([window isVisible]) [NSApp activateIgnoringOtherApps:YES];
+    if ([window isVisible]) {
+         /*
+          * When run in XCode, for some reason the window doesn't become
+          * topmost if `[NSApp activateIgnoringOtherApps:YES]` is called
+          * immediately, so call it with a timer to allow the application to
+          * initialize before becoming frontmost.
+          */
+        [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(activate) userInfo:nil repeats:NO];
+    }
     
     username = [[NSUserDefaults standardUserDefaults] stringForKey:@"username"];
     if (username == nil) {
@@ -80,12 +89,17 @@
     }
 }
 
+- (void)activate {
+    [NSApp activateIgnoringOtherApps:YES];
+}
+
 /*
  * Activates the main window when the application is reopened.
  */
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)app hasVisibleWindows:(BOOL)flag {
-    if (!flag) [window makeKeyAndOrderFront:nil];
-	return YES;
+    [NSApp activateIgnoringOtherApps:YES];
+    [window makeKeyAndOrderFront:self];
+    return NO;
 }
 
 - (IBAction)rightButtonClicked:(id)sender {
