@@ -18,6 +18,5 @@
 
 - (IBAction)rightButtonClicked:(id)sender;
 - (IBAction)leftButtonClicked:(id)sender;
-- (IBAction)performClose:(id)sender;
 
 @end

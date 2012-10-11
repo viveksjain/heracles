@@ -153,8 +153,9 @@
  * Hides the window when it is closed, instead of actually closing it, so that
  * it can be reopened when the application is reactivated. 
  */
-- (IBAction)performClose:(id)sender {
+- (BOOL)windowShouldClose:(id)sender {
     [NSApp hide:nil];
+    return NO;
 }
 
 /*
