@@ -324,7 +324,7 @@
 				GCC_PREFIX_HEADER = "Heracles/Heracles-Prefix.pch";
 				INFOPLIST_FILE = "Heracles/Heracles-Info.plist";
 				PRODUCT_NAME = Heracles;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

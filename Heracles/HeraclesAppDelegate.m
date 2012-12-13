@@ -611,14 +611,21 @@
     NSString *title;
     if ([self isSuccessfulMessage:message]) title = @"Authenticated";
     else title = @"Error Authenticating";
-    [GrowlApplicationBridge
-     notifyWithTitle:title
-     description:message
-     notificationName:title
-     iconData:nil
-     priority:0
-     isSticky:NO
-     clickContext:nil];
+    if (NSClassFromString(@"NSUserNotification") != nil) {
+        NSUserNotification *notification = [[NSUserNotification alloc] init];
+        [notification setTitle:title];
+        [notification setInformativeText:message];
+        [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:notification];
+    } else {
+        [GrowlApplicationBridge
+         notifyWithTitle:title
+         description:message
+         notificationName:title
+         iconData:nil
+         priority:0
+         isSticky:NO
+         clickContext:nil];
+    }
     if (exitAfterNotify) exit(1);
 }
 
