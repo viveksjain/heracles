@@ -131,7 +131,9 @@
             return;
         }
         
+#ifndef DEBUG
         [self addToLoginItems];
+#endif
         
         NSString *whitelist = [self getWhitelistURL];
         BOOL chromeWhitelisted;
