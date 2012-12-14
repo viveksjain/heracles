@@ -138,7 +138,6 @@
         NSString *whitelist = [self getWhitelistURL];
         BOOL chromeWhitelisted;
         if ([self whitelistURL:whitelist isChromeWhitelisted:&chromeWhitelisted]) [[NSUserDefaults standardUserDefaults] setObject:whitelist forKey:@"whitelist"];
-        if (chromeWhitelisted) [self alertToLogout];
 
         if (firstRun) {
             firstRun = NO;
@@ -147,6 +146,7 @@
         [self setStatus:@"" error:NO];
         if (firstRun) message = [message stringByAppendingString:@" From now on Heracles will automatically obtain Kerberos tokens for you on login."];
         [self notify:message];
+        if (chromeWhitelisted) [self alertToLogout];
         [NSApp hide:nil];
     }
 }
@@ -459,7 +459,7 @@
     exitAfterNotify = NO;
     realmName = nil;
     
-    NSDictionary *prefs=[[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.apple.loginwindow"];
+    NSDictionary *prefs = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.apple.loginwindow"];
     if ([prefs objectForKey:@"autoLoginUser"] != nil) return @"Automatic login is enabled. You can disable it in System Preferences → Security & Privacy → General → Disable automatic login.";
     
     if (usernameToUse == nil) usernameToUse = username;
