@@ -1,0 +1,20 @@
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>Heracles Changelog</title>
+        <link>http://viveksjain.github.com/heracles/appcast.xml</link>
+        <description>Heracles changes along with links to updates.</description>
+        <language>en</language>
+
+        <item>
+            <title>Version 1.1</title>
+            <pubDate>Mon, 17 Dec 2012 09:41:00 +0000</pubDate>
+            <sparkle:releaseNotesLink>http://viveksjain.github.com/heracles/changelog.html</sparkle:releaseNotesLink>
+            <enclosure url="http://viveksjain.github.com/heracles/downloads/Heracles-v1.1.zip"
+                sparkle:version="1.1"
+                length="770851"
+                type="application/octet-stream"
+                sparkle:dsaSignature="MC4CFQCnet0NpYYyL6d6dagyr+0QKfwBGQIVAJORdgvfxiRyXyqxhemWIz4qkkWJ"
+                />
+        </item>
+    </channel>
+</rss>
