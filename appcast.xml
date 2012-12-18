@@ -7,13 +7,13 @@
 
         <item>
             <title>Version 1.1</title>
-            <pubDate>Mon, 17 Dec 2012 09:41:00 +0000</pubDate>
+            <pubDate>Mon, 18 Dec 2012 10:42:00 +0000</pubDate>
             <sparkle:releaseNotesLink>http://viveksjain.github.com/heracles/changelog.html</sparkle:releaseNotesLink>
             <enclosure url="http://viveksjain.github.com/heracles/downloads/Heracles-v1.1.zip"
                 sparkle:version="1.1"
                 length="770851"
                 type="application/octet-stream"
-                sparkle:dsaSignature="MC4CFQCnet0NpYYyL6d6dagyr+0QKfwBGQIVAJORdgvfxiRyXyqxhemWIz4qkkWJ"
+                sparkle:dsaSignature="MC0CFQCi58e68mi1c0TaFZo9yuClN3r3+QIUaPXtyg1TpzZk3bgPXi9wv1y0mZw="
                 />
         </item>
     </channel>
