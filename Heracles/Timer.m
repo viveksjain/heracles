@@ -25,6 +25,7 @@ static NSDate *fireDate;
 + (void)fireWithTimeIntervalSince1970:(NSTimeInterval)seconds target:(id)target selector:(SEL)selector {
     fireDate = [NSDate dateWithTimeIntervalSince1970:seconds];
     DLOG(@"Next fire date: %@", fireDate);
+    if (timer != nil) [timer invalidate];
     timer = [NSTimer scheduledTimerWithTimeInterval:[fireDate timeIntervalSinceNow] target:target selector:selector userInfo:nil repeats:NO];
 }
 
